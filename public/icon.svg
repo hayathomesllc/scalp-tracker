@@ -1,45 +1,92 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1a1209"/>
+      <stop offset="0%" stop-color="#151010"/>
       <stop offset="100%" stop-color="#0d0d0d"/>
     </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#8b5e1a"/>
+    <linearGradient id="gold" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#e8c96a"/>
       <stop offset="50%" stop-color="#c9a84c"/>
-      <stop offset="100%" stop-color="#e8c96a"/>
+      <stop offset="100%" stop-color="#8b5e1a"/>
     </linearGradient>
   </defs>
-  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
-  <!-- Head silhouette -->
-  <ellipse cx="256" cy="280" rx="100" ry="120" fill="none" stroke="url(#gold)" stroke-width="6" opacity="0.3"/>
-  <!-- Hair strands flowing upward -->
-  <g fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round">
-    <!-- Center strand -->
-    <path d="M256 200 Q256 120 256 80"/>
-    <!-- Left strands -->
-    <path d="M230 210 Q220 140 200 90"/>
-    <path d="M205 225 Q185 160 155 110"/>
-    <path d="M185 245 Q155 185 120 140"/>
-    <!-- Right strands -->
-    <path d="M282 210 Q292 140 312 90"/>
-    <path d="M307 225 Q327 160 357 110"/>
-    <path d="M327 245 Q357 185 392 140"/>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- Side profile head silhouette -->
+  <path d="
+    M 230 380
+    L 230 340
+    Q 200 330 180 310
+    Q 155 285 150 255
+    Q 145 225 150 200
+    Q 155 170 175 148
+    Q 195 126 220 115
+    Q 240 107 265 105
+    Q 295 103 320 112
+    Q 345 122 360 142
+    Q 372 158 375 180
+    Q 378 200 370 218
+    L 372 220
+    Q 380 225 382 240
+    Q 383 252 375 260
+    Q 370 266 365 268
+    Q 360 285 345 300
+    Q 335 310 320 318
+    L 315 340
+    L 315 380
+  " fill="none" stroke="url(#gold)" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- Ear -->
+  <path d="
+    M 370 218
+    Q 385 222 388 238
+    Q 390 252 378 260
+  " fill="none" stroke="url(#gold)" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Hair line on top of head -->
+  <path d="
+    M 220 115
+    Q 225 100 245 92
+    Q 270 84 300 90
+    Q 330 97 350 115
+    Q 365 130 370 150
+  " fill="none" stroke="url(#gold)" stroke-width="5" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Massage hand from above -->
+  <!-- Palm area -->
+  <ellipse cx="270" cy="108" rx="42" ry="14" fill="none" stroke="#c9a84c" stroke-width="4" opacity="0.7"/>
+
+  <!-- Fingers pressing down on scalp -->
+  <g stroke="#c9a84c" stroke-width="4.5" stroke-linecap="round" fill="none" opacity="0.85">
+    <!-- Finger 1 - pinky -->
+    <path d="M 232 105 Q 222 80 218 62"/>
+    <!-- Finger 2 - ring -->
+    <path d="M 248 100 Q 242 72 240 52"/>
+    <!-- Finger 3 - middle -->
+    <path d="M 268 98 Q 266 68 266 45"/>
+    <!-- Finger 4 - index -->
+    <path d="M 288 100 Q 292 72 295 52"/>
+    <!-- Thumb -->
+    <path d="M 308 108 Q 325 90 338 80"/>
   </g>
-  <!-- Massage circles / fingertip dots -->
-  <g fill="url(#gold)" opacity="0.6">
-    <circle cx="190" cy="240" r="10"/>
-    <circle cx="220" cy="215" r="10"/>
-    <circle cx="256" cy="205" r="10"/>
-    <circle cx="292" cy="215" r="10"/>
-    <circle cx="322" cy="240" r="10"/>
+
+  <!-- Fingertip pressure dots -->
+  <g fill="#c9a84c" opacity="0.6">
+    <circle cx="218" cy="60" r="6"/>
+    <circle cx="240" cy="50" r="6"/>
+    <circle cx="266" cy="43" r="6.5"/>
+    <circle cx="295" cy="50" r="6"/>
+    <circle cx="340" cy="78" r="5.5"/>
   </g>
-  <!-- Sparkle accents -->
-  <g fill="#c9a84c" opacity="0.8">
-    <polygon points="256,60 260,70 270,72 262,78 264,88 256,82 248,88 250,78 242,72 252,70" />
-    <polygon points="150,100 153,107 160,108 155,112 156,119 150,115 144,119 145,112 140,108 147,107" />
-    <polygon points="362,100 365,107 372,108 367,112 368,119 362,115 356,119 357,112 352,108 359,107" />
+
+  <!-- Small pressure/motion lines around fingers -->
+  <g stroke="#e8c96a" stroke-width="2" stroke-linecap="round" opacity="0.35">
+    <line x1="208" y1="55" x2="202" y2="48"/>
+    <line x1="232" y1="42" x2="228" y2="34"/>
+    <line x1="266" y1="33" x2="266" y2="24"/>
+    <line x1="302" y1="42" x2="306" y2="34"/>
+    <line x1="348" y1="72" x2="356" y2="66"/>
   </g>
-  <!-- Bottom text arc hint -->
-  <text x="256" y="420" text-anchor="middle" font-family="Georgia, serif" font-size="28" letter-spacing="6" fill="#c9a84c" opacity="0.7">SCALP RITUAL</text>
 </svg>
