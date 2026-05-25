@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1209"/>
+      <stop offset="100%" stop-color="#0d0d0d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b5e1a"/>
+      <stop offset="50%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#e8c96a"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <!-- Head silhouette -->
+  <ellipse cx="256" cy="280" rx="100" ry="120" fill="none" stroke="url(#gold)" stroke-width="6" opacity="0.3"/>
+  <!-- Hair strands flowing upward -->
+  <g fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round">
+    <!-- Center strand -->
+    <path d="M256 200 Q256 120 256 80"/>
+    <!-- Left strands -->
+    <path d="M230 210 Q220 140 200 90"/>
+    <path d="M205 225 Q185 160 155 110"/>
+    <path d="M185 245 Q155 185 120 140"/>
+    <!-- Right strands -->
+    <path d="M282 210 Q292 140 312 90"/>
+    <path d="M307 225 Q327 160 357 110"/>
+    <path d="M327 245 Q357 185 392 140"/>
+  </g>
+  <!-- Massage circles / fingertip dots -->
+  <g fill="url(#gold)" opacity="0.6">
+    <circle cx="190" cy="240" r="10"/>
+    <circle cx="220" cy="215" r="10"/>
+    <circle cx="256" cy="205" r="10"/>
+    <circle cx="292" cy="215" r="10"/>
+    <circle cx="322" cy="240" r="10"/>
+  </g>
+  <!-- Sparkle accents -->
+  <g fill="#c9a84c" opacity="0.8">
+    <polygon points="256,60 260,70 270,72 262,78 264,88 256,82 248,88 250,78 242,72 252,70" />
+    <polygon points="150,100 153,107 160,108 155,112 156,119 150,115 144,119 145,112 140,108 147,107" />
+    <polygon points="362,100 365,107 372,108 367,112 368,119 362,115 356,119 357,112 352,108 359,107" />
+  </g>
+  <!-- Bottom text arc hint -->
+  <text x="256" y="420" text-anchor="middle" font-family="Georgia, serif" font-size="28" letter-spacing="6" fill="#c9a84c" opacity="0.7">SCALP RITUAL</text>
+</svg>
